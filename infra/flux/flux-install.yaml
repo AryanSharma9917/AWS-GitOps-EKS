@@ -1,0 +1,7 @@
+# Install Flux v2 (we assume you're using the GitHub bootstrap model)
+flux bootstrap github \
+  --owner=<your-github-username> \
+  --repository=saas-on-eks-gitops \
+  --branch=main \
+  --path=flux \
+  --personal

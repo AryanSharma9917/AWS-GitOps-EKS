@@ -2,6 +2,40 @@
 
 
 '''
+saas-on-eks-gitops/
+├── README.md
+├── infra/
+│   ├── cluster.yaml
+│   ├── eksctl-create.sh
+│   └── flux/
+│       └── flux-install.yaml
+├── tenants/
+│   └── tenant-template.yaml
+├── helm/
+│   └── app-chart/
+│       ├── Chart.yaml
+│       ├── values.yaml
+│       └── templates/
+│           └── deployment.yaml
+├── automation/
+│   ├── go/
+│   │   ├── main.go
+│   │   └── onboard.go
+│   └── python/
+│       ├── main.py
+│       └── onboard.py
+├── argo/
+│   └── workflows/
+│       └── tenant-onboarding.yaml
+├── flux/
+│   └── kustomization.yaml
+└── cleanup/
+    └── cleanup.sh
+
+'''
+
+
+'''
 You said:
 Workshop Studio
 
