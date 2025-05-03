@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Workflow
+metadata:
+  name: onboard-tenant
+spec:
+  entrypoint: onboard
+  templates:
+    - name: onboard
+      container:
+        image: python:3.9
+        command: [python]
+        args: ["/scripts/onboard.py"]
+        volumeMounts:
+          - name: scripts
+            mountPath: /scripts
+      volumes:
+        - name: scripts
+          configMap:
+            name: tenant-onboard-script
