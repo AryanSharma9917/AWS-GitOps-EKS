@@ -1,0 +1,4 @@
+apiVersion: v2
+name: app-chart
+description: A sample SaaS tenant app
+version: 0.1.0

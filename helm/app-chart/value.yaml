@@ -1,0 +1,2 @@
+tenantName: tenant1
+image: nginx:latest
