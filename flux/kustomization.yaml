@@ -1,0 +1,7 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ./tenants/namespace-tenant1.yaml
+  - ./tenants/tenant-tenant1.yaml
+  - ./tenants/namespace-tenant2.yaml
+  - ./tenants/tenant-tenant2.yaml
